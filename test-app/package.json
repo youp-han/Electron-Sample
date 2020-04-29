@@ -1,0 +1,14 @@
+{
+  "name": "test-app",
+  "version": "1.0.0",
+  "description": "simple test app",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Mike Han",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^8.2.3"
+  }
+}
