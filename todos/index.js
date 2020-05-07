@@ -55,6 +55,13 @@ const menuTemplate = [
                     createAddWindow();
                 }
             },
+            {
+                label: 'Clear All',
+                accelerator: process.platform === 'darwin' ? 'Command+C' : 'Ctrl+C',
+                click(){
+                    mainWindow.webContents.send('todo:clear');
+                }
+            },
             { 
                 label: 'Quit',
                 accelerator: process.platform === 'darwin' ? 'Command+Q' : 'Ctrl+Q',
