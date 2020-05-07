@@ -23,11 +23,11 @@ function createWindow () {
   }
   
   //PccNTMon.exe check before open up the app in Window
-  let nameOfProcessRunning = 'PccNTMon.exe' 
+  let nameOfProcessRunning = 'mike.exe' 
 
   //PccNTMon check before open up the app in Mac
   if (process.platform !== 'darwin') {
-    let nameOfProcessRunning = 'PccNTMon' 
+    let nameOfProcessRunning = 'mike' 
   }
 
   isRunning(nameOfProcessRunning, (status) => {
@@ -47,7 +47,7 @@ function createWindow () {
 
       // and load the index.html of the app.
       //mainWindow.loadFile('index.html')
-      mainWindow.loadURL('https://edrive.eland.co.kr/') 
+      mainWindow.loadURL('https://www.google.com/') 
 
       // Open the DevTools.
       mainWindow.webContents.openDevTools()
