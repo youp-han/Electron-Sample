@@ -1,0 +1,5 @@
+- "C:\Windows\Microsoft.NET\Framework\v4.0.30319\csc.exe" 사용 
+- .net framework 3.5버전 사용불가
+===============================
+csc.exe /target:library /debug Verification.cs
+===============================

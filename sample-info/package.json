@@ -1,0 +1,30 @@
+{
+  "name": "DeskTop-App",
+  "productName": "DeskTop-App",
+  "version": "1.1.2",
+  "description": "DeskTop-App",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron --core .",
+    "package-win": "electron-packager . DeskTop-App --overwrite --asar --icon=assets/icons/win/icon.ico --extra-resource=resources/Verification.dll --platform=win32 --arch=ia32 --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"DeskTop-App\"",
+    "create-installer-win": "node installers/windows/createinstaller.js"
+  },
+  "repository": "..",
+  "keywords": [
+    "Electron",
+    "EDrive"
+  ],
+  "author": "mike han",
+  "license": "MH",
+  "dependencies": {
+    "electron-edge-js": "^12.13.0",
+    "electron-is-dev": "^1.2.0",
+    "electron-log": "^4.1.2"
+  },
+  "devDependencies": {
+    "electron": "^8.2.3",
+    "electron-installer-dmg": "^3.0.0",
+    "electron-packager": "^14.2.1",
+    "electron-winstaller": "^4.0.0"
+  }
+}
